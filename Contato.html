@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="icon" type="image/x-icon" href="/aula_07/favicon.png" />
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <ul>
+          <li><a href="principal.html">Home</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Atendimento.html">Atendimento</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <img src="/aula_07/contato.png" alt="logo clinica" />
+        </div>
+
+        <div class="content">
+          <div class="formularioContato">
+            <form action="#" method="post" enctype="multipart/form-data">
+              <label>
+                <span><i class="icon icon-user-1"></i> Nome</span>
+                <input type="text" name="nome" required="" />
+              </label>
+
+              <label>
+                <span><i class="icon icon-email"></i> E-mail</span>
+                <input type="text" name="email" class="fade_8S" />
+              </label>
+              <label>
+                <span><i class="icon icon-flag"></i> Assunto</span>
+                <input type="text" name="assunto" required="" />
+              </label>
+
+              <label>
+                <span><i class="icon icon-comment"></i> Mensagem</span>
+                <textarea name="mensagem" rows="3" required=""></textarea>
+              </label>
+
+              <input type="hidden" name="acao" value="enviar" />
+              <button class="btn-envia" title="Enviar">
+                <b class="icon icon-paper-plane-o"> Enviar</b>
+              </button>
+              <input type="hidden" name="reset" value="Limpar" />
+              <button class="btn-limpar" title="Limpar">
+                <b class="icon icon-paper-plane-o"> Limpar</b>
+              </button>
+            </form>
+          </div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                width="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=clinica&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe
+              ><a href="https://formatjson.org/">format json</a>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 400px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 400px;
+              }
+              .gmap_iframe {
+                height: 400px !important;
+              }
+            </style>
+          </div>
+
+          <h3>Segue nosso telefone</h3>
+
+          <a href="tel:+5571999999999"
+            >Clique aqui para ligar para (71) 99999-9999</a
+          >
+          <h3>Segue nosso whatsapp</h3>
+          <a href="web.whatsapp.com/send?phone=5599111112222"
+            >whatsapp clique aqui</a
+          >
+        </div>
+
+        <div class="footer">
+          <nav>
+            <h3>Fique conectado !</h3>
+            <ul>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+            <p>Cliniplus - Todos os direitos Reservados - 2022</p>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
